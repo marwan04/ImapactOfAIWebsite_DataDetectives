@@ -4,7 +4,7 @@
 
 An interactive website exploring the impact of artificial intelligence through data visualization. The project will evolve during the course as the team adds pages featuring different visualization types.
 
-> **Project status:** Initial React + Vite setup completed. Website content, visualizations, and public deployment are planned or in progress.
+> **Project status:** React + Vite initialization and default template cleanup completed. The application runs locally, and ESLint and production build checks pass. Initial project documentation is available. Homepage development, visualizations, and GitHub Pages deployment are upcoming.
 
 ## Project overview
 
@@ -29,7 +29,7 @@ The specific questions, datasets, and messages for each visualization will be do
 | React | Component-based UI | Initialized |
 | Vite | Local development and production builds | Initialized |
 | JavaScript / JSX | Application logic and components | In use |
-| CSS | Site styling and SVG selectors | Planned |
+| CSS | Global styling and typography; future SVG styling | Initial setup completed |
 | Git / GitHub | Version control and collaboration | In use |
 | GitHub Pages | Public hosting | Planned |
 | D3.js or another suitable library | Interactive visualizations | To be evaluated per visualization |
@@ -42,23 +42,31 @@ The specific questions, datasets, and messages for each visualization will be do
 - Git
 - Node.js and npm compatible with the version of Vite declared in `package.json`
 
+
 ### Local setup
 
 ```bash
-git clone <REPOSITORY_URL>
-cd ImpactOfAIWebsite_DataDetectives
+git clone https://github.com/marwan04/ImapactOfAIWebsite_DataDetectives.git
+cd ImapactOfAIWebsite_DataDetectives
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite (typically `http://localhost:5173/`). Replace `<REPOSITORY_URL>` with the actual GitHub clone URL. If you use a different local directory name, adjust the `cd` command.
+Open the local URL printed by Vite, typically
+http://localhost:5173/.
 
-### Other useful commands
+### Development commands
 
 ```bash
-npm run build      # Create a production build in dist/
-npm run preview    # Preview the production build locally
+npm run dev      # Start the development server
+npm run lint     # Run ESLint
+npm run build    # Create a production build
+npm run preview  # Preview the production build
 ```
+
+Both `npm run lint` and `npm run build` have
+been verified successfully after the initial
+Vite template cleanup.
 
 Lint commands depend on the scripts configured in `package.json`; check that file before running them.
 
@@ -104,7 +112,10 @@ The proposed team workflow is:
 5. Open a pull request explaining the changes and how they were tested.
 6. Have another team member review the pull request before merging into `main` when possible.
 
-These are recommended practices; branch protection and automated checks are not yet configured. More detailed rules will be added in `docs/CONTRIBUTING.md`.
+Detailed contribution guidelines are available in
+[CONTRIBUTING.md](docs/CONTRIBUTING.md).
+
+Branch protection and automated checks are not yet configured.
 
 ## Visualization quality checklist
 
