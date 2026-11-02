@@ -87,7 +87,34 @@ These features are planned and are not part of the current implementation.
 
 ## Deployment
 
-GitHub Pages is the intended hosting platform. Deployment configuration has not yet been implemented.
+The application is hosted on GitHub Pages and deployed automatically using GitHub Actions.
+
+### Deployment workflow
+
+The workflow is defined in `.github/workflows/deploy.yml`.
+
+When changes are pushed to `main`, GitHub Actions:
+
+1. Checks out the repository.
+2. Installs Node.js and project dependencies.
+3. Runs ESLint.
+4. Builds the application using Vite.
+5. Uploads the production build from `dist/`.
+6. Deploys the build to GitHub Pages.
+
+### Vite configuration
+
+The application uses the following base path:
+
+`/ImapactOfAIWebsite_DataDetectives/`
+
+This is configured in `vite.config.js` to ensure that assets and navigation work correctly when the website is hosted under the repository path.
+
+### Live website
+
+https://marwan04.github.io/ImapactOfAIWebsite_DataDetectives/
+
+Deployment configuration changes should be tested locally before being merged into `main`.
 
 ## Maintaining this document
 

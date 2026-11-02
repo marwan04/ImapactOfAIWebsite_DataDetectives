@@ -125,6 +125,19 @@ Then open a pull request targeting `main`. Include:
 
 Ask another teammate to review before merging when possible. Resolve feedback and avoid merging code that breaks the site. Branch protection and automated checks may be added later; they are not assumed to be configured now.
 
-## 7. Keep documentation current
+## 7. Continuous deployment
+
+The website is automatically deployed to GitHub Pages when changes are merged into `main`.
+
+Before submitting a pull request, contributors should run:
+
+```bash
+npm run lint
+npm run build
+```
+
+Only tested and reviewed changes should be merged into `main`. A successful merge triggers the deployment workflow defined in `.github/workflows/deploy.yml`.
+
+## 8. Keep documentation current
 
 Update the README or relevant documents when a change affects setup, architecture, navigation, data sources, or team conventions. Do not document planned features as if they are already implemented.

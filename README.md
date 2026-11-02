@@ -4,7 +4,7 @@
 
 An interactive website exploring the impact of artificial intelligence through data visualization. The project will evolve during the course as the team adds pages featuring different visualization types.
 
-> **Project status:** The React + Vite application now includes a responsive homepage with project information, visualization placeholders, and team details. Shared Header and Footer components are implemented. The website has been tested locally on desktop and mobile. Visualization pages and GitHub Pages deployment are pending.
+> **Project status:** The responsive React + Vite homepage is implemented and publicly deployed through GitHub Pages. The website includes project information, visualization placeholders, and team details. Automatic deployment is configured through GitHub Actions. Interactive visualization pages will be developed as course assignments progress.
 
 ## Project overview
 
@@ -31,7 +31,7 @@ The specific questions, datasets, and messages for each visualization will be do
 | JavaScript / JSX | Application logic and components | In use |
 | CSS | Global styling, typography, responsive layout, and component styles | Implemented; ongoing |
 | Git / GitHub | Version control and collaboration | In use |
-| GitHub Pages | Public hosting | Planned |
+| GitHub Pages | Public hosting and deployment | Implemented |
 | D3.js or another suitable library | Interactive visualizations | To be evaluated per visualization |
 | React Router | Navigation between pages | Planned; not yet installed |
 
@@ -120,5 +120,5 @@ Before merging a new visualization, check that it:
 ## Links
 
 - **Repository:** https://github.com/marwan04/ImapactOfAIWebsite_DataDetectives.git
-- **Live website:**
+- **Live website:** https://marwan04.github.io/ImapactOfAIWebsite_DataDetectives/
 - **Course:** Data Visualization — University of Genoa
