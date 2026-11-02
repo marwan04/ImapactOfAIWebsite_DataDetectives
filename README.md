@@ -4,7 +4,7 @@
 
 An interactive website exploring the impact of artificial intelligence through data visualization. The project will evolve during the course as the team adds pages featuring different visualization types.
 
-> **Project status:** Initial React + Vite setup completed. Website content, visualizations, and public deployment are planned or in progress.
+> **Project status:** The React + Vite application now includes a responsive homepage with project information, visualization placeholders, and team details. Shared Header and Footer components are implemented. The website has been tested locally on desktop and mobile. Visualization pages and GitHub Pages deployment are pending.
 
 ## Project overview
 
@@ -29,7 +29,7 @@ The specific questions, datasets, and messages for each visualization will be do
 | React | Component-based UI | Initialized |
 | Vite | Local development and production builds | Initialized |
 | JavaScript / JSX | Application logic and components | In use |
-| CSS | Site styling and SVG selectors | Planned |
+| CSS | Global styling, typography, responsive layout, and component styles | Implemented; ongoing |
 | Git / GitHub | Version control and collaboration | In use |
 | GitHub Pages | Public hosting | Planned |
 | D3.js or another suitable library | Interactive visualizations | To be evaluated per visualization |
@@ -42,53 +42,49 @@ The specific questions, datasets, and messages for each visualization will be do
 - Git
 - Node.js and npm compatible with the version of Vite declared in `package.json`
 
+
 ### Local setup
 
 ```bash
-git clone <REPOSITORY_URL>
-cd ImpactOfAIWebsite_DataDetectives
+git clone https://github.com/marwan04/ImapactOfAIWebsite_DataDetectives.git
+cd ImapactOfAIWebsite_DataDetectives
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite (typically `http://localhost:5173/`). Replace `<REPOSITORY_URL>` with the actual GitHub clone URL. If you use a different local directory name, adjust the `cd` command.
+Open the local URL printed by Vite, typically
+http://localhost:5173/.
 
-### Other useful commands
+### Development commands
 
 ```bash
-npm run build      # Create a production build in dist/
-npm run preview    # Preview the production build locally
+npm run dev      # Start the development server
+npm run lint     # Run ESLint
+npm run build    # Create a production build
+npm run preview  # Preview the production build
 ```
 
-Lint commands depend on the scripts configured in `package.json`; check that file before running them.
+Both `npm run lint` and `npm run build` have
+been verified successfully after the initial
+Vite template cleanup.
 
 ## Project structure
 
 The following is the **proposed target structure**, not a claim that all files already exist:
 
 ```text
-.
-├── .github/
-│   ├── workflows/                 # CI and deployment workflows
-│   └── PULL_REQUEST_TEMPLATE.md
-├── docs/
-│   ├── ARCHITECTURE.md
-│   ├── CONTRIBUTING.md
-│   ├── DESIGN_GUIDELINES.md
-│   └── DATA_SOURCES.md
-├── public/
-│   └── images/
-├── src/
-│   ├── components/                # Reusable UI and layout
-│   ├── pages/                     # Route-level pages
-│   ├── visualizations/            # Individual charts and interactions
-│   ├── data/                      # Local datasets and processing helpers
-│   ├── styles/                    # Shared CSS
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-├── package.json
-└── vite.config.js
+src/
+├── components/
+│   └── layout/
+│       ├── Header.jsx
+│       ├── Header.css
+│       ├── Footer.jsx
+│       └── Footer.css
+├── pages/
+│   └── Home.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
 ```
 
 The structure may evolve as the visualization assignments become clearer.
@@ -104,7 +100,10 @@ The proposed team workflow is:
 5. Open a pull request explaining the changes and how they were tested.
 6. Have another team member review the pull request before merging into `main` when possible.
 
-These are recommended practices; branch protection and automated checks are not yet configured. More detailed rules will be added in `docs/CONTRIBUTING.md`.
+Detailed contribution guidelines are available in
+[CONTRIBUTING.md](docs/CONTRIBUTING.md).
+
+Branch protection and automated checks are not yet configured.
 
 ## Visualization quality checklist
 

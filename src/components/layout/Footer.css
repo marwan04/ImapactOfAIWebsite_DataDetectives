@@ -1,0 +1,29 @@
+.site-footer {
+  background-color: #002677;
+  color: #ffffff;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+}
