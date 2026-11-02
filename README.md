@@ -68,8 +68,6 @@ Both `npm run lint` and `npm run build` have
 been verified successfully after the initial
 Vite template cleanup.
 
-Lint commands depend on the scripts configured in `package.json`; check that file before running them.
-
 ## Project structure
 
 The following is the **proposed target structure**, not a claim that all files already exist:
