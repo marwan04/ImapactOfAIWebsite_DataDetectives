@@ -17,7 +17,8 @@ src/
 │       ├── Footer.jsx
 │       └── Footer.css
 ├── pages/
-│   └── Home.jsx
+│   ├── Home.jsx
+│   └── Home.css
 ├── App.jsx
 ├── main.jsx
 └── index.css
@@ -45,6 +46,21 @@ main.jsx
     ├── Home
     └── Footer
 ```
+
+## Component description 
+
+### Homepage
+
+The `Home` component implements the introductory page of the website.
+
+It contains:
+
+- A hero section introducing the project.
+- An overview describing the project's objectives.
+- Placeholder cards for upcoming visualization pages.
+- A section identifying the DataDetectives team members.
+
+The homepage uses semantic HTML and responsive CSS. Visualization topics, datasets, and navigation links will be added as the corresponding pages are developed.
 
 ## Styling conventions
 

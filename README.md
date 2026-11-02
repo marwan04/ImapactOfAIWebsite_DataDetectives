@@ -4,7 +4,7 @@
 
 An interactive website exploring the impact of artificial intelligence through data visualization. The project will evolve during the course as the team adds pages featuring different visualization types.
 
-> **Project status:** React + Vite setup, template cleanup, and initial application layout completed. Reusable Header and Footer components and a dedicated Home page are implemented. ESLint and production build checks have passed for the initial setup. Homepage content, visualizations, and GitHub Pages deployment are still in development.
+> **Project status:** The React + Vite application now includes a responsive homepage with project information, visualization placeholders, and team details. Shared Header and Footer components are implemented. The website has been tested locally on desktop and mobile. Visualization pages and GitHub Pages deployment are pending.
 
 ## Project overview
 
@@ -29,7 +29,7 @@ The specific questions, datasets, and messages for each visualization will be do
 | React | Component-based UI | Initialized |
 | Vite | Local development and production builds | Initialized |
 | JavaScript / JSX | Application logic and components | In use |
-| CSS | Global styling and typography; future SVG styling | Initial setup completed |
+| CSS | Global styling, typography, responsive layout, and component styles | Implemented; ongoing |
 | Git / GitHub | Version control and collaboration | In use |
 | GitHub Pages | Public hosting | Planned |
 | D3.js or another suitable library | Interactive visualizations | To be evaluated per visualization |
