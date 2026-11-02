@@ -4,7 +4,7 @@
 
 An interactive website exploring the impact of artificial intelligence through data visualization. The project will evolve during the course as the team adds pages featuring different visualization types.
 
-> **Project status:** React + Vite initialization and default template cleanup completed. The application runs locally, and ESLint and production build checks pass. Initial project documentation is available. Homepage development, visualizations, and GitHub Pages deployment are upcoming.
+> **Project status:** React + Vite setup, template cleanup, and initial application layout completed. Reusable Header and Footer components and a dedicated Home page are implemented. ESLint and production build checks have passed for the initial setup. Homepage content, visualizations, and GitHub Pages deployment are still in development.
 
 ## Project overview
 
@@ -73,28 +73,18 @@ Vite template cleanup.
 The following is the **proposed target structure**, not a claim that all files already exist:
 
 ```text
-.
-├── .github/
-│   ├── workflows/                 # CI and deployment workflows
-│   └── PULL_REQUEST_TEMPLATE.md
-├── docs/
-│   ├── ARCHITECTURE.md
-│   ├── CONTRIBUTING.md
-│   ├── DESIGN_GUIDELINES.md
-│   └── DATA_SOURCES.md
-├── public/
-│   └── images/
-├── src/
-│   ├── components/                # Reusable UI and layout
-│   ├── pages/                     # Route-level pages
-│   ├── visualizations/            # Individual charts and interactions
-│   ├── data/                      # Local datasets and processing helpers
-│   ├── styles/                    # Shared CSS
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-├── package.json
-└── vite.config.js
+src/
+├── components/
+│   └── layout/
+│       ├── Header.jsx
+│       ├── Header.css
+│       ├── Footer.jsx
+│       └── Footer.css
+├── pages/
+│   └── Home.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
 ```
 
 The structure may evolve as the visualization assignments become clearer.

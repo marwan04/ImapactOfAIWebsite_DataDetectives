@@ -10,8 +10,15 @@
   box-sizing: border-box;
 }
 
-body {
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
   margin: 0;
+}
+
+body {
   min-width: 320px;
 }
 
@@ -22,4 +29,24 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto Slab', serif;
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .home-page {
+    padding: 2rem 1rem;
+  }
 }

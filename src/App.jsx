@@ -1,9 +1,14 @@
+import Header from './components/layout/Header.jsx';
+import Footer from './components/layout/Footer.jsx';
+import Home from './pages/Home.jsx';
+
 function App() {
   return (
-    <main>
-      <h1>Mapping the Impact of AI</h1>
-      <p>DataDetectives — University of Genoa</p>
-    </main>
+    <div className="app-layout">
+      <Header />
+      <Home />
+      <Footer />
+    </div>
   );
 }
 
